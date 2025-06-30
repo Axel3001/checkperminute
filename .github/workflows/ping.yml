@@ -1,8 +1,9 @@
 name: Ping Glitch Server
 
 on:
+  workflow_dispatch:       # 👈 Adds the "Run workflow" button
   schedule:
-    - cron: '*/5 * * * *'  # Every 1 minute (GitHub UTC)
+    - cron: '*/1 * * * *'  # Runs every minute (UTC)
 
 jobs:
   ping:
