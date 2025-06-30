@@ -3,7 +3,7 @@ name: Ping Glitch Server
 on:
   workflow_dispatch:       # 👈 Adds the "Run workflow" button
   schedule:
-    - cron: '*/1 * * * *'  # Runs every minute (UTC)
+    - cron: '*/5 * * * *'  # Runs every minute (UTC)
 
 jobs:
   ping:
