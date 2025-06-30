@@ -2,7 +2,7 @@ name: Ping Glitch Server
 
 on:
   schedule:
-    - cron: '* * * * *'  # Every 1 minute (GitHub UTC)
+    - cron: '*/5 * * * *'  # Every 1 minute (GitHub UTC)
 
 jobs:
   ping:
