@@ -1,0 +1,13 @@
+name: Ping Glitch Server
+
+on:
+  schedule:
+    - cron: '* * * * *'  # Every 1 minute (GitHub UTC)
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Glitch /ping
+        run: |
+          curl -s -A "Mozilla/5.0" https://theplatrix.glitch.me/ping
